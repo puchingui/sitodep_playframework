@@ -1,0 +1,13 @@
+bin/
+data/
+db/
+dist/
+logs/
+test-result/
+lib/
+tmp/
+modules/
+*.ipr
+*.iws
+*.iml
+
