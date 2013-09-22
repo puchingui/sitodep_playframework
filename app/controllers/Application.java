@@ -13,4 +13,9 @@ public class Application extends Controller {
         render();
     }
 
+    public static void usuarios() {
+        List<Usuario> usuarios = Usuario.findAll();
+        renderJSON(usuarios);
+    }
+
 }
