@@ -1,0 +1,9 @@
+1. visualizar las columnas de equipo, modelo, serial, etc.
+
+2. eliminar espacios en blanco de recibido, y encargado / produce error
+
+3. mostrar seleccion del estado del equipo al registrarlo
+
+4. mostrar las ordenes a todos los usuarios no importando el usuario que las haya registrado
+
+5. agregas los campos cotizacion y facturas para la entrada de los equipo
