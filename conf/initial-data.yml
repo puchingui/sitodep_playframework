@@ -1,21 +1,18 @@
 #USUARIOS
 Usuario(ken):
-  nombre: kenneth
-  clave: 123
   email: kenneth.burgos@gmail.com
-  fullname: Kenneth Burgos
+  clave: 123
+  nombre: Kenneth Burgos
   rol: Administrador
 
 Usuario(emmanuel):
-  nombre: emmanuel
-  clave: 456
   email: tonerdepot@claro.net.do
-  fullname: Emmanuel Reyes
+  clave: 456
+  nombre: Emmanuel Reyes
   rol: Administrador
 
 Usuario(randy):
-  nombre: randy
-  clave: 789
   email: randy@gmail.com
-  fullname: Randy Mengano
+  clave: 789
+  nombre: Randy Mengano
   rol: Tecnico

@@ -14,41 +14,38 @@ import java.util.List;
 public class Usuario extends Model {
 
     @Required
-    public String nombre;
+    @Email
+    public String email;
 
     @Required
     @Password
     public String clave;
 
-    @Email
-    public String email;
-
-    public String fullname;
+    public String nombre;
 
     @Enumerated(EnumType.STRING)
     public Rol rol;
 
     /***
      * Constructor
-     * @param nombre
+     * @param email
      * @param clave
-     * @param fullname
+     * @param nombre
      * @param rol
      */
-    public Usuario(String nombre, String clave, String email, String fullname, Rol rol) {
-        this.nombre = nombre;
-        this.clave = clave;
+    public Usuario(String email, String clave, String nombre, Rol rol) {
         this.email = email;
-        this.fullname = fullname;
+        this.clave = clave;
+        this.nombre = nombre;
         this.rol = rol;
     }
 
-    public static Usuario findByNombre(String nombre) {
-        return find("byNombre", nombre).first();
+    public static Usuario findByEmail(String email) {
+        return find("byEmail", email).first();
     }
 
-    public static Usuario verifica(String nombre, String clave) {
-        return find("byNombreAndClave", nombre, clave).first();
+    public static Usuario verifica(String email, String clave) {
+        return find("byEmailAndClave", email, clave).first();
     }
 
     public static String[] allNombresUsuarios() {
@@ -67,6 +64,6 @@ public class Usuario extends Model {
     }
 
     public String toString() {
-        return nombre;
+        return this.nombre;
     }
 }

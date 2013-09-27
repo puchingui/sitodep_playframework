@@ -7,10 +7,12 @@ import java.util.*;
 
 import models.*;
 
+@With(Secure.class)
 public class Application extends Controller {
 
     public static void index() {
-        render();
+        Usuario usuario = Usuario.findByEmail(Security.connected());
+        render(usuario);
     }
 
     public static void usuarios() {
